@@ -1,7 +1,7 @@
 package edu.hit;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,7 +23,7 @@ public class L2022211874_7_Test {
         String expected = "a";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "字符串长度为 1 且 pairs 为空时，结果应与输入相同");
+        assertEquals("字符串长度为 1 且 pairs 为空时，结果应与输入相同", expected, actual);
     }
 
     /**
@@ -41,7 +41,7 @@ public class L2022211874_7_Test {
         String expected = "abc";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "pairs 为空时，字符串应保持不变");
+        assertEquals("pairs 为空时，字符串应保持不变", expected, actual);
     }
 
     /**
@@ -63,7 +63,7 @@ public class L2022211874_7_Test {
         String expected = "bacd";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "基本交换功能测试失败");
+        assertEquals("基本交换功能测试失败", expected, actual);
     }
 
     /**
@@ -86,7 +86,7 @@ public class L2022211874_7_Test {
         String expected = "abcd";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "复杂交换情况测试失败");
+        assertEquals("复杂交换情况测试失败", expected, actual);
     }
 
     /**
@@ -108,7 +108,7 @@ public class L2022211874_7_Test {
         String expected = "abc";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "全排列交换测试失败");
+        assertEquals("全排列交换测试失败", expected, actual);
     }
 
     /**
@@ -130,6 +130,6 @@ public class L2022211874_7_Test {
         String expected = "bacdef";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
-        assertEquals(expected, actual, "多个连通分量的测试失败");
+        assertEquals("多个连通分量的测试失败", expected, actual);
     }
 }
