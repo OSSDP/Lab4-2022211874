@@ -38,7 +38,7 @@ public class L2022211874_7_Test {
         String s = "abc";
         List<List<Integer>> pairs = new ArrayList<>();
 
-        String expected = "abc";
+        String expected = "abc_wrong";
         String actual = solution.smallestStringWithSwaps(s, pairs);
 
         assertEquals("pairs 为空时，字符串应保持不变", expected, actual);
